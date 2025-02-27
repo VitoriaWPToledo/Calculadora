@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("calculadora");
 Console.WriteLine("Qual operação você deseja executar? ");
-Console.WriteLine("Digite as opções: +, -, *, /, r ");
+Console.WriteLine("Digite uma das opções: +, -, *, /, r ");
 string operacao = Console.ReadLine();
 if (operacao == "+")
 {
@@ -27,6 +27,7 @@ static void raizQuadrada()
 {
     double n1, resultado;
     Console.WriteLine("Digite um numero para descubrir a raiz quadrade dele: ");
+    n1 = double.Parse(Console.ReadLine());
     resultado = Math.Sqrt(n1);
     Console.WriteLine($"O resultado de {n1} é {resultado}");
 }
