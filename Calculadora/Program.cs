@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("calculadora");
 Console.WriteLine("Qual operação você deseja executar? ");
-Console.WriteLine("Digite as opções: +, -, *, / ");
+Console.WriteLine("Digite as opções: +, -, *, /, r ");
 string operacao = Console.ReadLine();
 if (operacao == "+")
 {
@@ -17,10 +17,19 @@ else if (operacao == "*")
 else if (operacao == "/")
 {
     divisao();
+} else if (operacao == "r")
+{
+    raizQuadrada();
 }
 
 
-
+static void raizQuadrada()
+{
+    double n1, resultado;
+    Console.WriteLine("Digite um numero para descubrir a raiz quadrade dele: ");
+    resultado = Math.Sqrt(n1);
+    Console.WriteLine($"O resultado de {n1} é {resultado}");
+}
 static void soma()
 {
     double n1, n2;
