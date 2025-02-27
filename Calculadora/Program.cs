@@ -15,6 +15,7 @@ static void menuCalculadora()
         Console.WriteLine("Digite ( * ) para fazer uma multiplicação");
         Console.WriteLine("Digite ( / ) para fazer uma divisão");
         Console.WriteLine("Digite ( r ) para descubrir a raiz quadrada de um numero");
+        Console.WriteLine("Digite ( % ) para algumas opções envolvendo porcentagem");
         Console.WriteLine("Para fechar o menu digite ( 0 )");
         Console.WriteLine("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
         Console.Write("Qual opção: ");
@@ -45,6 +46,10 @@ static void menuCalculadora()
         else if (operacao == "0")
         {
             continuarMenu = false;
+        }
+        else if (operacao == "%")
+        {
+            porcentagem(); ;
         }
         else
         {
@@ -105,4 +110,17 @@ static void divisao()
     n2 = double.Parse(Console.ReadLine());
 
     Console.WriteLine($"O resultado de {n1} / {n2} é: {n1 / n2}");
+}
+
+static void porcentagem()
+{
+    double n1, n2,resultado;
+    
+    Console.WriteLine("Digite o número numero base: ");
+    n1 = double.Parse(Console.ReadLine());
+    Console.WriteLine("Digite o numero que você quer descobrir a porcentagem sobre o numero base: ");
+    n2 = double.Parse(Console.ReadLine());
+    resultado = (n2 / n1) * 100;
+    Console.WriteLine($"{n2} é {resultado:F2}% de {n1}");
+    
 }
