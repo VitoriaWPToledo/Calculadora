@@ -39,7 +39,7 @@ static void soma()
     Console.WriteLine("Digite o segundo número: ");
     n2 = double.Parse(Console.ReadLine());
 
-    Console.WriteLine(n1 + n2);
+    Console.WriteLine($"O resultado de {n1} + {n2} é: {n1+n2}");
 }
 
 static void subtracao()
@@ -51,7 +51,7 @@ static void subtracao()
     Console.WriteLine("Digite o segundo número: ");
     n2 = double.Parse(Console.ReadLine());
 
-    Console.WriteLine(n1 - n2);
+    Console.WriteLine($"O resultado de {n1} - {n2} é: {n1 - n2}");
 }
 static void multiplicacao()
 {
@@ -62,7 +62,7 @@ static void multiplicacao()
     Console.WriteLine("Digite o segundo número: ");
     n2 = double.Parse(Console.ReadLine());
 
-    Console.WriteLine(n1 * n2);
+    Console.WriteLine($"O resultado de {n1} * {n2} é: {n1 * n2}");
 }
 
 static void divisao()
@@ -74,5 +74,5 @@ static void divisao()
     Console.WriteLine("Digite o segundo número: ");
     n2 = double.Parse(Console.ReadLine());
 
-    Console.WriteLine(n1 / n2);
+    Console.WriteLine($"O resultado de {n1} / {n2} é: {n1 / n2}");
 }
