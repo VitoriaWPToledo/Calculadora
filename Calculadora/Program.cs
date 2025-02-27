@@ -115,12 +115,29 @@ static void divisao()
 static void porcentagem()
 {
     double n1, n2,resultado;
-    
-    Console.WriteLine("Digite o número numero base: ");
-    n1 = double.Parse(Console.ReadLine());
-    Console.WriteLine("Digite o numero que você quer descobrir a porcentagem sobre o numero base: ");
-    n2 = double.Parse(Console.ReadLine());
-    resultado = (n2 / n1) * 100;
-    Console.WriteLine($"{n2} é {resultado:F2}% de {n1}");
-    
+    Console.WriteLine("Opção (1): digite 2 numeros e descubra a porcentagem do segundo referente ao primeiro ");
+    Console.WriteLine("Opção (2): digite um numero em seguida digite a porcetagem dele, será exibido o valor referente a porcentagem ");
+    Console.WriteLine("Opção: ");
+    int opcao;
+    opcao = int.Parse(Console.ReadLine());
+    if (opcao == 1)
+    {
+        Console.WriteLine("Digite o número numero base: ");
+        n1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Digite o numero que você quer descobrir a porcentagem sobre o numero base: ");
+        n2 = double.Parse(Console.ReadLine());
+        resultado = (n2 / n1) * 100;
+        Console.WriteLine($"{n2} é {resultado:F2}% de {n1}");
+    }
+    if (opcao == 2)
+    {
+        Console.WriteLine("Digite o número numero base: ");
+        n1 = double.Parse(Console.ReadLine());
+        Console.WriteLine($"Digite a porcentagem que você deseja descubir de {n1} ");
+        n2 = double.Parse(Console.ReadLine());
+        resultado = (n1 / 100) * n2;
+        Console.WriteLine($"{n2}% de {n1} é: {resultado}");
+    }
+
+
 }
