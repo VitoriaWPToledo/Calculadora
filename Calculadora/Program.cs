@@ -46,6 +46,7 @@ static void menuCalculadora()
         else if (operacao == "0")
         {
             continuarMenu = false;
+            Console.WriteLine("Aplicação Encerrada!!!");
         }
         else if (operacao == "%")
         {
