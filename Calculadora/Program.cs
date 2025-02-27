@@ -7,15 +7,21 @@ static void menuCalculadora()
     bool continuarMenu = true;
     while (continuarMenu)
     {
-    Console.WriteLine("Menu calculadora");
-    Console.WriteLine("Digite ( + ) para fazer uma soma");
-    Console.WriteLine("Digite ( - ) para fazer uma subtração");
-    Console.WriteLine("Digite ( * ) para fazer uma multiplicação");
-    Console.WriteLine("Digite ( / ) para fazer uma divisão");
-    Console.WriteLine("Digite ( r ) para descubrir a raiz quadrada de um numero");
+
+        Console.WriteLine("\n\n\n\n\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");   
+        Console.WriteLine("Menu calculadora");
+        Console.WriteLine("Digite ( + ) para fazer uma soma");
+        Console.WriteLine("Digite ( - ) para fazer uma subtração");
+        Console.WriteLine("Digite ( * ) para fazer uma multiplicação");
+        Console.WriteLine("Digite ( / ) para fazer uma divisão");
+        Console.WriteLine("Digite ( r ) para descubrir a raiz quadrada de um numero");
         Console.WriteLine("Para fechar o menu digite ( 0 )");
-    Console.Write("Qual opção: ");
+        Console.WriteLine("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+        Console.Write("Qual opção: ");
+        
+
         string operacao = Console.ReadLine();
+        Console.Clear();
         if (operacao == "+")
         {
             soma();
@@ -42,8 +48,7 @@ static void menuCalculadora()
         }
         else
         {
-            Console.Clear();
-            Console.WriteLine("Valor Invalido, digite novamente");
+            Console.WriteLine("Valor Invalido, digite novamente: ");
         }
     }
 }
