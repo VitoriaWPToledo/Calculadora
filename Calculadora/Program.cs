@@ -109,7 +109,16 @@ static void divisao()
     n1 = double.Parse(Console.ReadLine());
     Console.WriteLine("Digite o segundo número: ");
     n2 = double.Parse(Console.ReadLine());
+    if ( n2 == 0) 
+    {
+        while (n2 == 0)
+        {
+            Console.WriteLine("Não podemos dividir por 0 \n digite o segundo numero novamente: ");
+            n2 = double.Parse(Console.ReadLine());
+        }
+        
 
+    };
     Console.WriteLine($"O resultado de {n1} / {n2} é: {n1 / n2}");
 }
 
