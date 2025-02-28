@@ -125,3 +125,6 @@ static void porcentagem()
     Console.WriteLine($"{n2} é {resultado:F2}% de {n1}");
     
 }
+
+//apenas um testes
+int nada = 0;
